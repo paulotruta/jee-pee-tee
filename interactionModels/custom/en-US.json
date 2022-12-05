@@ -1,0 +1,125 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "jee pee",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [
+            {
+              "name": "searchQuery",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{searchQuery}"
+              ]
+            }
+          ],
+          "samples": [
+            "if {searchQuery}",
+            "for {searchQuery}",
+            "when {searchQuery}",
+            "who {searchQuery}",
+            "how {searchQuery}",
+            "the question {searchQuery}",
+            "about {searchQuery}",
+            "answer a question",
+            "to help me with something else",
+            "to help me with a question",
+            "to help me with something",
+            "a question",
+            "for a question",
+            "ask openAI a question",
+            "answer me a question"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "HelloWorldIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "searchQuery",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.29691672240.1575270597350"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.604331776974.404371559008",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What\u0027s on your mind?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Tell me what you want to know"
+          },
+          {
+            "type": "PlainText",
+            "value": "What is your question?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.29691672240.1575270597350",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What\u0027s up?"
+          },
+          {
+            "type": "PlainText",
+            "value": "How can AI help you today?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What is your question?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Absolutely. What is your question?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Sure. What\u0027s on your mind?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "16"
+}
