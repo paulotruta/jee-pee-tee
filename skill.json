@@ -59,7 +59,7 @@
             "AI"
           ],
           "name": "Gee Pee Tee (Chat GTP)",
-          "summary": "A skill that lets you ask questions to chat GTP!",
+          "summary": "A skill that lets you ask questions to ChatGPT!",
           "updatesDescription": "- First alpha! Requires a logged in openai.com access token"
         }
       },
