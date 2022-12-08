@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "jee pee",
+      "invocationName": "jee pee tee",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -16,7 +16,7 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
+          "name": "QuestionIntent",
           "slots": [
             {
               "name": "searchQuery",
@@ -58,7 +58,7 @@
     "dialog": {
       "intents": [
         {
-          "name": "HelloWorldIntent",
+          "name": "QuestionIntent",
           "confirmationRequired": false,
           "prompts": {},
           "slots": [
@@ -121,5 +121,5 @@
       }
     ]
   },
-  "version": "16"
+  "version": "19"
 }
