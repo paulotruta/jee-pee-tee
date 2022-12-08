@@ -7,7 +7,7 @@
 import json
 import logging
 
-import ask_sdk_core.utils as ask_utils
+from ask_sdk_core import utils as ask_utils
 from ask_sdk_core.dispatch_components import (
     AbstractExceptionHandler,
     AbstractRequestHandler,
