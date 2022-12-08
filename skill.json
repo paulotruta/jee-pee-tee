@@ -26,23 +26,44 @@
       }
     },
     "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "https://github.com/paulotruta",
+          "termsOfUseUrl": "https://github.com/paulotruta"
+        }
+      },
+      "shoppingKit": {
+        "isAmazonAssociatesOnAlexaEnabled": false,
+        "isShoppingActionsEnabled": false
+      }
+    },
     "publishingInformation": {
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "category": "EDUCATION_AND_REFERENCE",
       "distributionCountries": [],
       "isAvailableWorldwide": true,
       "locales": {
         "en-US": {
-          "description": "Inteface with chatGPT using voice! The openAI powered chatbot will respond to your queries and even maintain a conversation with you.",
+          "description": "Have the power of chatGTP at the tip of your tonge! Alexa can relay questions to chatGPT and provide you the answers in natural language! This is an excellent way to get to know about certain topics in detail, or brainstorm a fantasy world!",
           "examplePhrases": [
             "Alexa ask jee pee tee a question",
-            "Alexa, ask jee pee tee about our solar system",
-            "help"
+            "ask gee pee tee how to boil an egg",
+            "ask gee pee tee to explain in detail about the NP theorem"
           ],
-          "keywords": [],
-          "name": "Gee Pee Tee (chatGPT)",
-          "summary": "A relay to chatGPT, the openAI powered chatbot."
+          "keywords": [
+            "gpt",
+            "chatGPT",
+            "AI"
+          ],
+          "name": "Gee Pee Tee (Chat GTP)",
+          "summary": "A skill that lets you ask questions to chat GTP!",
+          "updatesDescription": "- First alpha! Requires a logged in openai.com access token"
         }
       },
-      "testingInstructions": "You can test this skill by saying, Alexa, ask jee pee tee a question, and then asking a follow up question"
+      "testingInstructions": "Ask Alexa to ask gee pee tee a question, and then ask a question. You can also ask gee pee tee to explain a topic in detail, or to tell you a story!"
     }
   }
 }
