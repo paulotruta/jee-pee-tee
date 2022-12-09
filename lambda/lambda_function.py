@@ -5,12 +5,12 @@
 # implementing Alexa features!
 
 import logging
-import json
 
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
 from ask_sdk_core.dispatch_components import AbstractExceptionHandler
 from ask_sdk_core.handler_input import HandlerInput
 from ask_sdk_core.skill_builder import SkillBuilder
+from utils import load_config
 import ask_sdk_core.utils as ask_utils
 
 from ask_sdk_model import Response
@@ -20,9 +20,7 @@ from revChatGPT.revChatGPT import Chatbot
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-# Loads json object from config.json
-with open("config.json") as f:
-    config = json.load(f)
+config = load_config()
 
 # Set up ChatGPT
 chatgpt = Chatbot(config)
