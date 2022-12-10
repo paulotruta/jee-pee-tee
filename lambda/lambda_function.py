@@ -16,13 +16,12 @@ from ask_sdk_core.handler_input import HandlerInput
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_model import Response
 from revChatGPT.revChatGPT import Chatbot
+from utils import load_config
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-# Loads json object from config.json
-with open("config.json") as f:
-    config = json.load(f)
+config = load_config()
 
 # Set up ChatGPT
 chatgpt = Chatbot(config)
