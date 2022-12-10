@@ -1,7 +1,7 @@
 # Terms of Use
 
-These Terms of Use ("Terms") apply to your use of our Alexa skill ("Skill"). 
-By using our Skill, you agree to be bound by these Terms and our Privacy Policy. 
+These Terms of Use ("Terms") apply to your use of our Alexa skill ("Skill").
+By using our Skill, you agree to be bound by these Terms and our Privacy Policy.
 If you do not agree to these Terms, do not use our Skill.
 
 ## Changes to These Terms
