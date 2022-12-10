@@ -14,10 +14,9 @@ from ask_sdk_core.dispatch_components import (
 )
 from ask_sdk_core.handler_input import HandlerInput
 from ask_sdk_core.skill_builder import SkillBuilder
-from utils import load_config
-
 from ask_sdk_model import Response
 from revChatGPT.revChatGPT import Chatbot
+from utils import load_config
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)

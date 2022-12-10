@@ -1,6 +1,7 @@
 import sys
-from utils import load_config
+
 from revChatGPT.revChatGPT import Chatbot
+from utils import load_config
 
 if len(sys.argv) != 2:
     print("You must provide text")
