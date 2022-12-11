@@ -35,8 +35,7 @@ This skill also allows a direct relay of the question with a single command:
 - `Alexa, ask jee pee tee about our solar system`
 - `Alexa, ask jee pee tee to explain the NP theorem`
 
-__Note: The interaction model only supports a couple ways to start a direct question
-If you want to ask a question in a different way, you can always start with the first command and follow up with the question.__
+__Note: The interaction model only supports a couple ways to start a direct question. If you want to ask a question in a different way, you can always start with the first command and follow up with the question.__
 # Disclaimer
 
 This is not an official OpenAI product. This is a personal project and is not affiliated with OpenAI in any way.
