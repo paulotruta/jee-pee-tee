@@ -29,6 +29,8 @@ pre-commit run --all-files
 ```
 
 This will lint and fix any styling issues in your code acoording to the code style described [here](https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html#pragmatism)
+
+## Usage
 ### Commands
 
 If you have the skill installed on your account, you can call it on Alexa by saying:
