@@ -17,6 +17,7 @@ from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_model import Response
 from revChatGPT.revChatGPT import Chatbot
 from utils import load_config
+from utils import clean_chat_response
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -59,7 +60,7 @@ class QuestionIntentHandler(AbstractRequestHandler):
         slots = handler_input.request_envelope.request.intent.slots
         voice_prompt = slots["searchQuery"].value
         logger.info("User says: " + voice_prompt)
-        response = chatgpt.get_chat_response(voice_prompt)
+        response = clean_chat_response(chatgpt.get_chat_response(voice_prompt))
         logger.info(response)
         logger.info("ChatGPT says: " + response["message"])
         speak_output = response["message"]
