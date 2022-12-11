@@ -37,9 +37,11 @@ class LaunchRequestHandler(AbstractRequestHandler):
     def handle(self, handler_input: HandlerInput) -> Response:
         speak_output = "Sure, what is the question?"
 
+        # Here we are launching the skill, so we can reset the chat.
+        # Note: While testing just with RevGPT,
+        # we can see the conversation ID and parent ID always changing
+        # even when reset_chat is not called.
         chatgpt.reset_chat()
-        # Uses the session_token to get a new bearer token
-        chatgpt.refresh_session()
 
         return (
             handler_input.response_builder.speak(speak_output)
@@ -55,18 +57,13 @@ class QuestionIntentHandler(AbstractRequestHandler):
         return ask_utils.is_intent_name("QuestionIntent")(handler_input)
 
     def handle(self, handler_input: HandlerInput) -> Response:
-        # Uses the session_token to get a new bearer token
-        chatgpt.refresh_session()
         slots = handler_input.request_envelope.request.intent.slots
         voice_prompt = slots["searchQuery"].value
         logger.info("User says: " + voice_prompt)
         response = clean_chat_response(chatgpt.get_chat_response(voice_prompt))
-        logger.info(response)
-        logger.info("ChatGPT says: " + response["message"])
-        speak_output = response["message"]
 
         return (
-            handler_input.response_builder.speak(speak_output)
+            handler_input.response_builder.speak(response)
             .ask("Can I help you any further?")
             .response
         )
