@@ -33,7 +33,7 @@ def clean_chat_response(response: dict) -> str:
     }
 
     try:
-        error = response.get("detail", {}).get("type", "")
+        error = response.get("detail", {}).get("type")
         if error:
             logger.warning(f"ChatGPT Error caught: {error}")
             logger.info(response)
