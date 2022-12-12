@@ -41,7 +41,7 @@ def clean_chat_response(response: dict) -> str:
 
         chat_response = response.get("message")
         if chat_response:
-            logger.info("ChatGPT says: " + chat_response)
+            logger.info(f"ChatGPT says: {chat_response}")
             return chat_response
         else:
             logger.warning("ChatGPT Error caught: unexpected_error")
