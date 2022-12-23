@@ -53,11 +53,7 @@
             "ask gee pee tee how to boil an egg",
             "ask gee pee tee to explain in detail about the NP theorem"
           ],
-          "keywords": [
-            "gpt",
-            "ChatGPT",
-            "AI"
-          ],
+          "keywords": ["gpt", "ChatGPT", "AI"],
           "name": "Gee Pee Tee (Chat GTP)",
           "summary": "A skill that lets you ask questions to ChatGPT!",
           "updatesDescription": "- First alpha! Requires a logged in openai.com access token"

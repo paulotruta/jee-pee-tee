@@ -1,4 +1,4 @@
 {
-    "Authorization": "<API-KEY>",
-    "session_token": "<session-token>"
+  "Authorization": "<API-KEY>",
+  "session_token": "<session-token>"
 }

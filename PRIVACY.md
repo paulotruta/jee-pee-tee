@@ -22,7 +22,7 @@ We do not share your personal information with third parties for their own marke
 
 - With service providers who assist us in providing our skill, such as companies that help us with speech recognition or other technical services. These service providers are contractually obligated to protect your information and may only use your information to provide services to us.
 - With law enforcement or government agencies, if required by law, or in response to a valid legal request.
-In the event of a merger, acquisition, or other similar event, we may share your information with a third party, subject to their privacy practices.
+  In the event of a merger, acquisition, or other similar event, we may share your information with a third party, subject to their privacy practices.
 
 ## Your Choices and Rights
 

@@ -16,7 +16,7 @@
           "samples": []
         },
         {
-          "name": "QuestionIntent",
+          "name": "FragenIntent",
           "slots": [
             {
               "name": "searchQuery",
@@ -25,21 +25,20 @@
             }
           ],
           "samples": [
-            "if {searchQuery}",
-            "for {searchQuery}",
-            "when {searchQuery}",
-            "who {searchQuery}",
-            "how {searchQuery}",
-            "the question {searchQuery}",
-            "about {searchQuery}",
-            "answer a question",
-            "to help me with something else",
-            "to help me with a question",
-            "to help me with something",
-            "a question",
-            "for a question",
-            "ask openAI a question",
-            "answer me a question"
+            "wenn {searchQuery}",
+            "für {searchQuery}",
+            "wer {searchQuery}",
+            "wie {searchQuery}",
+            "die Frage {searchQuery}",
+            "über {searchQuery}",
+            "beantworte eine Frage",
+            "um mir mit etwas anderem zu helfen",
+            "um mir mit einer Frage zu helfen",
+            "um mir mit etwas zu helfen",
+            "eine Frage",
+            "für eine Frage",
+            "stelle OpenAI eine Frage",
+            "beantworte mir eine Frage"
           ]
         },
         {
@@ -80,15 +79,15 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "What\u0027s on your mind?"
+            "value": "Was geht dir durch den Kopf?"
           },
           {
             "type": "PlainText",
-            "value": "Tell me what you want to know"
+            "value": "Erzähl mir, was du wissen möchtest"
           },
           {
             "type": "PlainText",
-            "value": "What is your question?"
+            "value": "Was ist deine Frage?"
           }
         ]
       },
@@ -97,23 +96,23 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "What\u0027s up?"
+            "value": "Was gibt's Neues?"
           },
           {
             "type": "PlainText",
-            "value": "How can AI help you today?"
+            "value": "Wie kann dir heute KI helfen?"
           },
           {
             "type": "PlainText",
-            "value": "What is your question?"
+            "value": "Was ist deine Frage?"
           },
           {
             "type": "PlainText",
-            "value": "Absolutely. What is your question?"
+            "value": "Absolut. Was ist deine Frage?"
           },
           {
             "type": "PlainText",
-            "value": "Sure. What\u0027s on your mind?"
+            "value": "Sicher. Was geht dir durch den Kopf?"
           }
         ]
       }
