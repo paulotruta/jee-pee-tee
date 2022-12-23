@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Alexa Skill (Python)",
+      "type": "python",
+      "request": "launch",
+      "program": "${command:ask.debugAdapterPath}",
+      "pythonPath": "${command:python.interpreterPath}",
+      "args": [
+        "--accessToken",
+        "${command:ask.accessToken}",
+        "--skillId",
+        "${command:ask.skillIdFromWorkspace}",
+        "--skillHandler",
+        "lambda_handler",
+        "--skillFilePath",
+        "${workspaceFolder}/lambda/lambda_function.py",
+        "--region",
+        "EU"
+      ],
+      "console": "internalConsole",
+      "cwd": "${workspaceFolder}/lambda"
+    },
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
