@@ -1,4 +1,3 @@
 {
-    "Authorization": "<API-KEY>",
-    "session_token": "<session-token>"
+    "api_key": "<open-ai-api-key>"
 }
