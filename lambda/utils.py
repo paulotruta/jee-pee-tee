@@ -1,5 +1,6 @@
 import json
 from os.path import exists
+
 from chatgpt import Client
 
 CONFIG_FILE = "config.json"
@@ -15,4 +16,4 @@ def load_config() -> dict:
 
 def get_client() -> Client:
     config = load_config()
-    return Client(config['api_key'])
+    return Client(config["api_key"])
